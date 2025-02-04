@@ -1,0 +1,12 @@
+name: Python application
+on: push
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Check out code
+      uses: actions/checkout@v2
+    - name: Check syntax errors
+      uses: cclauss/Find-Python-syntax-errors-action@v0.2.0
+          
